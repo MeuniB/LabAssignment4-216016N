@@ -1,4 +1,6 @@
-# appointment.py
+# Appointment.py
+from Patient import Patient
+from Doctor import Doctor
 
 class Appointment:
     def __init__(self, appointment_id, patient, doctor, date, time):
@@ -15,3 +17,12 @@ class Appointment:
         self.patient.display_info()
         print("Doctor Info:")
         self.doctor.display_info()
+
+class FollowUpAppointment(Appointment):
+    def __init__(self, appointment_id, patient, doctor, date, time, follow_up_reason):
+        super().__init__(appointment_id, patient, doctor, date, time)
+        self.follow_up_reason = follow_up_reason
+
+    def display_info(self):
+        super().display_info()
+        print(f"Follow-Up Reason: {self.follow_up_reason}")
