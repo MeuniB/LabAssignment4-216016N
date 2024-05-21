@@ -1,4 +1,3 @@
-
 # Person.py
 
 class Person:
@@ -11,4 +10,3 @@ class Person:
         print(f"ID: {self.person_id}")
         print(f"Name: {self.name}")
         print(f"Age: {self.age}")
-
