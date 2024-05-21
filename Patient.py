@@ -1,5 +1,4 @@
-# patient.py
-
+# Patient.py
 from Person import Person
 
 class Patient(Person):
