@@ -6,6 +6,7 @@ from Patient import Patient
 from Doctor import Doctor
 from Appointment import Appointment
 from Hospital import Hospital
+from Department import Department
 
 # Create Hospital object
 hospital = Hospital()
@@ -27,6 +28,9 @@ hospital.add_doctor(doctor2)
 # Create Appointment objects
 appointment1 = Appointment(appointment_id=1001, patient=patient1, doctor=doctor1, date="2024-06-01", time="10:00 AM")
 appointment2 = Appointment(appointment_id=1002, patient=patient2, doctor=doctor2, date="2024-06-02", time="11:00 AM")
+
+#Creating Department
+department = Department(department_id=201, name="Cardiology", head=specialist)
 
 # Schedule appointments
 hospital.schedule_appointment(appointment1)
