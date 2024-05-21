@@ -1,8 +1,8 @@
 # hospital.py
 
-from patient import Patient
-from doctor import Doctor
-from appointment import Appointment
+from Patient import Patient
+from Doctor import Doctor
+from Appointment import Appointment
 
 class Hospital:
     def __init__(self):
