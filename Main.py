@@ -33,3 +33,20 @@ department.display_info()
 print("\nRoom Info:")
 room.display_info()
 
+if __name__ == "__main__":
+    # Create a Medicine object
+    paracetamol = Medicine(
+        medicine_id=101,
+        name="Paracetamol",
+        manufacturer="Pharma Inc.",
+        expiry_date="2025-12-31",
+        price=0.99,
+        stock=100
+    )
+
+    # Display medicine info
+    paracetamol.display_info()
+
+    # Update stock
+    paracetamol.update_stock(50)
+    paracetamol.display_info()
