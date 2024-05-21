@@ -1,6 +1,6 @@
 # doctor.py
 
-from person import Person
+from Person import Person
 
 class Doctor(Person):
     def __init__(self, person_id, name, age, specialty):
